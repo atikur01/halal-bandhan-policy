@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Halal Bandhan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px;
+            background: linear-gradient(135deg, #2E7D32 0%, #4CAF50 100%);
+            border-radius: 20px;
+            color: white;
+            box-shadow: 0 10px 40px rgba(46, 125, 50, 0.3);
+        }
+
+        .header .arabic {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .header .tagline {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .header .last-updated {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .content {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 35px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .section h2 {
+            color: #2E7D32;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section h2::before {
+            content: '';
+            width: 4px;
+            height: 25px;
+            background: linear-gradient(135deg, #2E7D32, #4CAF50);
+            border-radius: 2px;
+        }
+
+        .section h3 {
+            color: #1B5E20;
+            font-size: 1.1rem;
+            margin: 20px 0 10px 0;
+        }
+
+        .section p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .section ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        .section li {
+            color: #555;
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        .section li::marker {
+            color: #4CAF50;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+            border-left: 4px solid #2E7D32;
+            padding: 20px;
+            border-radius: 0 10px 10px 0;
+            margin: 20px 0;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            color: #1B5E20;
+        }
+
+        .warning-box {
+            background: #FFF3E0;
+            border-left: 4px solid #FF9800;
+            padding: 20px;
+            border-radius: 0 10px 10px 0;
+            margin: 20px 0;
+        }
+
+        .warning-box p {
+            margin: 0;
+            color: #E65100;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #2E7D32 0%, #4CAF50 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .contact-box h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .contact-box a {
+            color: #C8E6C9;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-box a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: #2E7D32;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 15px;
+            }
+
+            .header {
+                padding: 30px 20px;
+            }
+
+            .header h1 {
+                font-size: 1.8rem;
+            }
+
+            .content {
+                padding: 25px 20px;
+            }
+
+            .section h2 {
+                font-size: 1.3rem;
+            }
+        }
+
+        .toc {
+            background: #f9f9f9;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        .toc h3 {
+            color: #2E7D32;
+            margin-bottom: 15px;
+        }
+
+        .toc ul {
+            list-style: none;
+            margin: 0;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+        }
+
+        .toc a {
+            color: #555;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .toc a:hover {
+            color: #2E7D32;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #2E7D32;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="arabic">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
+            <h1>🌙 Halal Bandhan</h1>
+            <p class="tagline">Privacy Policy</p>
+            <p class="last-updated">Last Updated: January 2025</p>
+        </header>
+
+        <div class="content">
+            <div class="toc">
+                <h3>📋 Table of Contents</h3>
+                <ul>
+                    <li><a href="#introduction">1. Introduction</a></li>
+                    <li><a href="#information-collected">2. Information We Collect</a></li>
+                    <li><a href="#how-we-use">3. How We Use Your Information</a></li>
+                    <li><a href="#data-sharing">4. Data Sharing & Disclosure</a></li>
+                    <li><a href="#data-security">5. Data Security</a></li>
+                    <li><a href="#data-retention">6. Data Retention</a></li>
+                    <li><a href="#your-rights">7. Your Rights</a></li>
+                    <li><a href="#childrens-privacy">8. Children's Privacy</a></li>
+                    <li><a href="#updates">9. Policy Updates</a></li>
+                    <li><a href="#contact">10. Contact Us</a></li>
+                </ul>
+            </div>
+
+            <section class="section" id="introduction">
+                <h2>1. Introduction</h2>
+                <p>Welcome to <strong>Halal Bandhan</strong> ("we," "our," or "us"). We are committed to protecting your privacy and ensuring that your personal information is handled in a safe and responsible manner. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Islamic matrimony mobile application.</p>
+                
+                <div class="highlight-box">
+                    <p><strong>Our Commitment:</strong> Halal Bandhan is designed with Islamic values at its core. We respect your privacy and ensure that your personal information, especially guardian/mahram details, is protected and only shared with matched users as per Islamic guidelines.</p>
+                </div>
+
+                <p>By using Halal Bandhan, you agree to the collection and use of information in accordance with this policy. If you do not agree with our policies, please do not use our application.</p>
+            </section>
+
+            <section class="section" id="information-collected">
+                <h2>2. Information We Collect</h2>
+                
+                <h3>2.1 Personal Information</h3>
+                <p>We collect information that you voluntarily provide when creating your profile:</p>
+                <ul>
+                    <li><strong>Account Information:</strong> Email address, password</li>
+                    <li><strong>Personal Details:</strong> Full name, year of birth, gender, skin tone, marital status, height, weight, blood group</li>
+                    <li><strong>Location Information:</strong> Current address, permanent address</li>
+                    <li><strong>Religious Information:</strong> Religion, sect</li>
+                    <li><strong>Biography:</strong> Personal description</li>
+                </ul>
+
+                <h3>2.2 Educational & Professional Information</h3>
+                <ul>
+                    <li>Education level and institution</li>
+                    <li>Profession and professional details</li>
+                    <li>Monthly income range</li>
+                </ul>
+
+                <h3>2.3 Family Information</h3>
+                <ul>
+                    <li>Parents' status and occupations</li>
+                    <li>Number of siblings</li>
+                    <li>Financial status</li>
+                </ul>
+
+                <h3>2.4 Guardian/Mahram Information</h3>
+                <ul>
+                    <li>Guardian's name</li>
+                    <li>Guardian's phone number</li>
+                </ul>
+
+                <div class="warning-box">
+                    <p><strong>Important:</strong> Guardian/Mahram contact information is only visible to users who have mutually matched with you. This ensures the halal nature of communication through proper channels.</p>
+                </div>
+
+                <h3>2.5 Partner Preferences</h3>
+                <ul>
+                    <li>Expected age range, height, weight preferences</li>
+                    <li>Preferred skin tone, education level, marital status</li>
+                    <li>Preferred location</li>
+                    <li>Additional expectations</li>
+                </ul>
+
+                <h3>2.6 Automatically Collected Information</h3>
+                <ul>
+                    <li><strong>Device Information:</strong> Device type, operating system, unique device identifiers</li>
+                    <li><strong>Usage Data:</strong> App interactions, features used, time spent</li>
+                    <li><strong>FCM Tokens:</strong> For push notification delivery</li>
+                    <li><strong>Crash Reports:</strong> Anonymous crash data for app improvement</li>
+                </ul>
+            </section>
+
+            <section class="section" id="how-we-use">
+                <h2>3. How We Use Your Information</h2>
+                <p>We use the collected information for the following purposes:</p>
+                
+                <h3>3.1 Core Services</h3>
+                <ul>
+                    <li>Create and manage your matrimony profile</li>
+                    <li>Display your profile to potential matches of the opposite gender</li>
+                    <li>Enable interest sending and receiving</li>
+                    <li>Facilitate matching between compatible users</li>
+                    <li>Enable in-app messaging between matched users</li>
+                </ul>
+
+                <h3>3.2 Communication</h3>
+                <ul>
+                    <li>Send push notifications for new interests and matches</li>
+                    <li>Send important service updates</li>
+                    <li>Respond to your inquiries and support requests</li>
+                </ul>
+
+                <h3>3.3 Service Improvement</h3>
+                <ul>
+                    <li>Analyze usage patterns to improve app features</li>
+                    <li>Fix bugs and technical issues</li>
+                    <li>Develop new features based on user needs</li>
+                </ul>
+
+                <h3>3.4 Safety & Security</h3>
+                <ul>
+                    <li>Prevent fraudulent or unauthorized activities</li>
+                    <li>Enforce our terms of service</li>
+                    <li>Protect the safety of our users</li>
+                </ul>
+            </section>
+
+            <section class="section" id="data-sharing">
+                <h2>4. Data Sharing & Disclosure</h2>
+                
+                <h3>4.1 With Other Users</h3>
+                <p>Your profile information (excluding guardian details) is visible to registered users of the opposite gender. Guardian/Mahram contact information is <strong>only shared with mutually matched users</strong>.</p>
+
+                <h3>4.2 Service Providers</h3>
+                <p>We use the following third-party services:</p>
+                <ul>
+                    <li><strong>Firebase (Google):</strong> Authentication, database, analytics, crash reporting, cloud messaging</li>
+                </ul>
+
+                <h3>4.3 Legal Requirements</h3>
+                <p>We may disclose your information if required by law, court order, or government request, or to protect our rights, property, or safety.</p>
+
+                <div class="highlight-box">
+                    <p><strong>We Never:</strong> Sell, rent, or trade your personal information to third parties for marketing purposes.</p>
+                </div>
+            </section>
+
+            <section class="section" id="data-security">
+                <h2>5. Data Security</h2>
+                <p>We implement robust security measures to protect your information:</p>
+                <ul>
+                    <li><strong>Encryption:</strong> All data is transmitted using SSL/TLS encryption</li>
+                    <li><strong>Firebase Security Rules:</strong> Strict access controls on database operations</li>
+                    <li><strong>Authentication:</strong> Secure email/password authentication via Firebase Auth</li>
+                    <li><strong>Screenshot Prevention:</strong> In-app screenshot and screen recording restrictions</li>
+                    <li><strong>Regular Audits:</strong> Periodic security reviews and updates</li>
+                </ul>
+
+                <div class="warning-box">
+                    <p><strong>Note:</strong> While we strive to protect your data, no method of electronic transmission is 100% secure. We cannot guarantee absolute security.</p>
+                </div>
+            </section>
+
+            <section class="section" id="data-retention">
+                <h2>6. Data Retention</h2>
+                <p>We retain your personal information as follows:</p>
+                <ul>
+                    <li><strong>Active Accounts:</strong> Data is retained as long as your account is active</li>
+                    <li><strong>Deactivated Accounts:</strong> Profile is hidden but data is retained for potential reactivation</li>
+                    <li><strong>Deleted Accounts:</strong> Data is permanently deleted within 30 days of account deletion request</li>
+                    <li><strong>Chat Messages:</strong> Retained until the match is deleted or accounts are removed</li>
+                </ul>
+            </section>
+
+            <section class="section" id="your-rights">
+                <h2>7. Your Rights</h2>
+                <p>You have the following rights regarding your personal information:</p>
+
+                <h3>7.1 Access & Portability</h3>
+                <p>You can view all your profile information within the app and request a copy of your data.</p>
+
+                <h3>7.2 Correction</h3>
+                <p>You can update or correct your profile information at any time through the Edit Profile feature.</p>
+
+                <h3>7.3 Deletion</h3>
+                <p>You can request deletion of your account and all associated data by contacting us or using the in-app account deletion feature.</p>
+
+                <h3>7.4 Deactivation</h3>
+                <p>You can temporarily deactivate your account, which hides your profile from other users while preserving your data.</p>
+
+                <h3>7.5 Withdraw Consent</h3>
+                <p>You can withdraw consent for data processing by deleting your account, though this will result in loss of access to our services.</p>
+            </section>
+
+            <section class="section" id="childrens-privacy">
+                <h2>8. Children's Privacy</h2>
+                <p>Halal Bandhan is intended for users who are <strong>18 years of age or older</strong>. We do not knowingly collect personal information from anyone under 18 years of age.</p>
+                <p>If we discover that we have collected information from a minor, we will delete it immediately. If you believe we have collected information from a minor, please contact us.</p>
+            </section>
+
+            <section class="section" id="updates">
+                <h2>9. Policy Updates</h2>
+                <p>We may update this Privacy Policy from time to time. We will notify you of any material changes by:</p>
+                <ul>
+                    <li>Posting the new Privacy Policy in the app</li>
+                    <li>Updating the "Last Updated" date at the top of this policy</li>
+                    <li>Sending a notification for significant changes</li>
+                </ul>
+                <p>We encourage you to review this Privacy Policy periodically to stay informed about how we protect your information.</p>
+            </section>
+
+            <section class="section" id="contact">
+                <h2>10. Contact Us</h2>
+                <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+                
+                <div class="contact-box">
+                    <h3>📧 Get in Touch</h3>
+                    <p><strong>Email:</strong> <a href="mailto:support@halalbandhan.com">support@halalbandhan.com</a></p>
+                    <p><strong>App:</strong> Halal Bandhan - Islamic Matrimony</p>
+                    <p style="margin-top: 15px; font-size: 0.9rem; opacity: 0.9;">We aim to respond to all inquiries within 48 hours.</p>
+                </div>
+            </section>
+        </div>
+
+        <footer class="footer">
+            <p>© 2025 Halal Bandhan. All Rights Reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="#">Terms of Service</a> | 
+                <a href="#">Privacy Policy</a> | 
+                <a href="#">Support</a>
+            </p>
+            <p style="margin-top: 15px; font-style: italic; color: #888;">
+                "And among His Signs is this, that He created for you mates from among yourselves, that ye may dwell in tranquility with them, and He has put love and mercy between your hearts." - Quran 30:21
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
